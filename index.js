@@ -89,9 +89,7 @@ Car.prototype.fill = function (gallons) {
 
 Car.prototype.drive = function (distance) {
   let tankUsed = distance / this.milesPerGallon;
-  let safeTank = this.tank;
   this.tank -= tankUsed;
-  let safeOdometer = this.odometer;
   this.odometer += distance;
 
 
@@ -130,10 +128,10 @@ const babyDan = new Baby("Daniel", 1, "computers");
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Points left of the dot
+  2. Using the "new" keyword can change the context of "this".
+  3. "this" is used to point to the object without having to restate itself.
+  4. "this" without context points to the global variable.
 */
 
 
